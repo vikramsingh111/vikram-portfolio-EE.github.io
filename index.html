@@ -48,21 +48,27 @@ body{
 
   <div id="msg" class="text-danger mb-2 d-none">❌ Wrong answer. Try again.</div>
 
-  <button class="btn btn-light w-100" onclick="unlock()">Unlock</button>
+  <button class="btn btn-light w-100" id="unlockBtn">Unlock</button>
 </div>
 
 <script>
-function unlock(){
-  const ans = document.getElementById("answer").value.trim();
+  document.getElementById("unlockBtn").addEventListener("click", function () {
+    const ans = document.getElementById("answer").value.trim();
+    console.log("Answer entered:", ans);
 
-  if(ans === "1"){
-    localStorage.setItem("unlocked","yes");
-    window.location.href = "./home.html";  // ✅ FIXED
-  } else {
-    document.getElementById("msg").classList.remove("d-none");
-  }
-}
+    if (ans === "1") {
+      localStorage.setItem("unlocked", "yes");
+
+      // ✅ GitHub-safe redirect (IMPORTANT)
+      const basePath = window.location.pathname.replace("index.html", "");
+      window.location.href = basePath + "home.html";
+
+    } else {
+      document.getElementById("msg").classList.remove("d-none");
+    }
+  });
 </script>
+
 
 
 </body>
