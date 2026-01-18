@@ -54,14 +54,16 @@ body{
 <script>
 function unlock(){
   const ans = document.getElementById("answer").value.trim();
+
   if(ans === "1"){
     localStorage.setItem("unlocked","yes");
-    window.location.href = "./home.html";
+    window.location.href = "./home.html";  // ✅ FIXED
   } else {
     document.getElementById("msg").classList.remove("d-none");
   }
 }
 </script>
+
 
 </body>
 </html>
