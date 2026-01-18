@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Vikram Singh</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .page-hero{
+      background: linear-gradient(135deg, #0a2540, #0d6efd);
+      color: white;
+      padding: 65px 0;
+    }
+    .soft-card{
+      border-radius: 18px;
+      transition: 0.25s;
+    }
+    .soft-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 22px 55px rgba(0,0,0,0.12);
+    }
+    .profile-img{
+      width: 210px;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 3px solid rgba(255,255,255,0.35);
+    }
+    .pill{
+      display:inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(13,110,253,0.12);
+      color: #0d6efd;
+      font-weight: 600;
+      font-size: 13px;
+      margin: 4px 6px 0 0;
+    }
+    .col-lg-4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.25s;
+    }
+
+    .profile-img{
+      width: 200px;
+      height: 300px;
+      object-fit: contain;          /* no crop */
+      background: #ffffff;             /* fills empty area */
+      border-radius: 20px;
+      padding: 6px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-lightning-charge-fill"></i> Vikram Singh</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-4 text-lg-end text-center">
+        <div class="profile-box d-inline-block">
+          <img src="assets/profile.jpg" alt="Vikram Singh" class="profile-img">
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <h1 class="fw-bold mb-2"><i class="bi bi-person-circle"></i> About Me</h1>
+        <p class="lead mb-0">
+          Electrical Engineer with experience in Indian Railways product monitoring, manufacturing operations,
+          QAP compliance, NABL calibration coordination and third-party inspection.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="py-5 bg-light">
+  <div class="container">
+
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="card soft-card p-4 h-100">
+          <h4 class="fw-bold mb-2">Professional Summary</h4>
+          <p class="text-muted mb-0">
+            I am a B.Tech Electrical Engineer with strong industrial experience in electrical distribution,
+            railway systems support, manufacturing monitoring, and quality processes. I believe in ethical,
+            safe, and accurate engineering practices, with strong documentation and inspection handling.
+          </p>
+
+          <div class="mt-3">
+            <span class="pill">Railways</span>
+            <span class="pill">Manufacturing</span>
+            <span class="pill">Quality (QAP)</span>
+            <span class="pill">Calibration</span>
+            <span class="pill">Inspection</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="card soft-card p-4 h-100">
+          <h4 class="fw-bold mb-3">Core Strengths</h4>
+          <ul class="mb-0">
+            <li>Monitoring and reporting for industrial operations</li>
+            <li>Quality Assurance Plan (QAP) understanding</li>
+            <li>NABL approved instrument calibration coordination</li>
+            <li>Third-party inspection support</li>
+            <li>AutoCAD drafting exposure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+  © 2025 Vikram Singh | Electrical Engineer
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
